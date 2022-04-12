@@ -1,0 +1,577 @@
+.header {
+    overflow: hidden;
+    background-color:#e6e2d3;;
+    padding: 10px 10px;
+    font-family: 'ProximaNova', sans-serif;
+    border-bottom:solid;
+    border-bottom-color:#c9bba8;
+    height: 70px;
+    position: static;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 130%; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  
+  .header a.MyBooks {
+    float:left;
+  }
+  .header-left{
+      margin-left:40%;
+  }
+  .header-right {
+    float: right;
+  }
+  .header-left a.MyBooks{
+      padding-right:20px;
+      
+  }
+.header-left .MyBooks:hover {background-color: white;}
+
+  .dropbtn {
+    background-color: #e6e2d3;
+    color: black;
+    padding-right: 40px;
+    padding-left:20px;
+    font-size: 16px;
+    border: none;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 105%;
+    border-radius: 4px;
+  }
+
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    font-family: 'ProximaNova', sans-serif;
+    font-size:70%;
+    border-radius: 4px;
+
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: white;}
+  .dropdown-content li:hover {background-color: white;}
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .dropdown-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+
+#pfp{
+    width:50px;
+    height: 50px;
+    margin-left: 0%;
+}
+img#search{
+    width: 19.2px;
+    height:19.2px;
+    margin-right:0%;
+}
+.header-left input[type=text]{
+    width: 152%;
+    border-color: #c9bba8;
+    height: 24px;
+}
+.header-left  input.searchbar{
+    padding-left: 25px;
+    background: url("search.png") no-repeat left;
+    background-color: white;
+    background-size: 23px;
+}
+.header-left a.searchbutton{
+    right:0;
+}
+
+
+.bookshelf{
+    background: url("book.png") no-repeat left;
+    padding-left: 7%;
+    background-color: #F9F7F5;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 115%;
+    border-right: dotted;
+    border-color:#c9bba8;
+    float:left;
+    margin-top: 1%;
+    width:15%;
+}
+.polica{
+  background-color: #F9F7F5;
+  border: none;
+  font-size:90%;
+  font-family: 'ProximaNova', sans-serif;
+  padding-bottom:20px;
+  text-decoration: none;
+  color: black;
+}
+#read{
+  padding-bottom:10px;
+}
+#currentlyreading{
+  padding-bottom:10px;
+}
+#wanttoread{
+  padding-bottom:20px;
+}
+.addToBookShelf{
+  background-color:#F9F7F5;
+  border:none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.addToBookShelf:hover{
+  background-color: #e6e2d3;
+  color:black;
+}
+.bookdata{
+    margin-top: 1%;
+    float:left;
+    margin-left:1%;
+    background-color:white;
+    border-radius: 2px;
+    padding: 3px 3px;
+    font-family: 'ProximaNova', sans-serif;  
+    border-bottom: solid;
+    border-color: #c9bba8;
+    height: 100%;
+    width: 70%;
+    margin-right: 5%;
+
+}
+.booklist a{
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 90%; 
+    line-height: 7px;
+    border-radius: 4px;
+}
+.booklist .cover{
+    padding: 50px 50px;
+    width: 20%;
+}
+.booklist .title {
+    padding:80px 80px;
+    width: 20%;
+}
+.booklist .author {
+    padding: 80px 80px;
+    width: 20%;
+}
+.booklist .yearreleased {
+    padding:50px 50px;
+    width: 20%;
+}
+.booklist .dateadded{
+    padding-left: 50px;
+    width: 20%;
+}
+.polica:hover{
+  text-decoration:underline;
+  color:black;
+}
+.prikazPolice{
+  margin-top:0.5%;
+  height: 100%;
+  width: 70%;
+  float:right;
+  margin-left:1%;
+  border: solid;
+  border-width: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 6.5%;
+
+}
+.velikostPrikazanihNaslovnic{
+  height: 150px;
+  width: 100px;
+  margin-top: 7%;
+}
+#posamezenNaslov{
+  width:16%;
+  float: left;
+  margin-left: 45px;
+  margin-top:35px;
+  font-weight:bold;
+}
+.posamezniPodatki{
+  width:16%;
+  float: left;
+  margin-left: 80px;
+  margin-top:35px;
+}
+#posameznaNaslovnica{
+  width:16%;
+  float: left;
+  margin-left: 60px;
+}
+#posamezneStrani{
+  width:5%;
+  float: left;
+  margin-left: 15px;
+  margin-top:35px;
+}
+.odstraniGumb{
+  float: right;
+  margin-top: 80%;
+  background-color:#e6e2d3;
+  border:none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+.odstraniGumb:hover{
+  color:black;
+  text-decoration: underline;
+}
+
+
+
+/*browse */
+#navigation{
+  width:20%;
+  float:left;
+  background-color:#F9F7F5;
+  border: solid;
+  border-color: #e6e2d3;
+  height:200%;
+  padding-left:40px;
+  padding-top:40px;
+  padding-bottom:150px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+#nav{
+  font-family:'Ariel', sans-serif;
+
+}
+
+.sort{
+  font-weight: bold;
+}
+#isci{
+  font-weight:bold;
+  padding:15px;
+  background-color: #e6e2d3;
+  border:none;
+  border-radius:4px;
+  padding-left:70px;
+  padding-right:75px;
+}
+#isci:hover{
+  background-color: #c9bba8;;
+  color: white;
+}
+#caption{
+  float:left;
+  font-size: 100%;
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 1.5%;
+  font-family:'Ariel', sans-serif;
+  
+}
+.bookContainer{
+  width:65%;
+  margin-left: 5%;
+  float:left;
+}
+.prikazKnjige{
+  float:left;
+  width: 25%;
+  margin-top:3%;
+
+}
+
+.velikostNaslovnic{
+  margin-left:25%;
+  width:100px;
+  height: 130px;
+}
+
+.BookLink{
+  background-color:white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  float:left;
+  font-weight: bold;
+  height: 200%;
+  width: 100%;
+  white-space: normal;
+  display: block;
+}
+
+.BookLink button:hover{
+  background-color:white;
+  color:black;
+  text-decoration: underline;
+}
+.DodajVBazo{
+  float:right;
+  margin-right:1.5%;
+  margin-top:1%;
+  background-color:#e6e2d3;
+  border:none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+.DodajVBazo:hover{
+  color:black;
+  text-decoration: underline;
+}
+
+/*Login */
+#loginbody{
+  background-color:#e6e2d3;
+}
+.Login{
+margin-left:35%;
+width:20%;
+background-color: white;
+border-radius: 12px;
+padding: 50px;
+padding-right: 65px;
+padding-bottom: 10px;
+margin-top: 12%;
+text-align: center;
+
+}
+.form-group{
+  padding-bottom: 20px;
+}
+.form-control{
+  border-radius: 4px;
+  width: 100%;
+  border-color: #c9bba8;
+  height: 30px;
+}
+.Loginbtn{
+  background-color:#e6e2d3;
+  border:none;
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  font-weight:bold;
+}
+.Loginbtn:hover{
+  background-color:#c9bba8;
+  color:white;
+}
+
+#text{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#newacc{
+  color: black;
+}
+
+
+/*signup*/
+#signupbody{
+  background-color:#e6e2d3;
+}
+#SignUp{
+  margin-left:35%;
+  width:20%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 50px;
+  padding-right: 65px;
+  padding-bottom: 10px;
+  padding-top:20px;
+  margin-top: 5%;
+  text-align: left;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+}
+.form-group{
+  padding-bottom: 20px;
+}
+.form-control{
+  border-radius: 4px;
+  width: 100%;
+  border-color: #c9bba8;
+  height: 30px;
+}
+.Signupbtn{
+  background-color:#e6e2d3;
+  border:none;
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  font-weight:bold;
+}
+.Signupbtn:hover{
+  background-color:#c9bba8;
+  color:white;
+}
+#text{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:150%;
+}
+
+/*add new book*/
+#formName{
+  font-size:150%;
+  padding-bottom:20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#AddNewBook{
+  margin-left:35%;
+  padding-top: 40px;
+  width:30%;
+  padding-bottom: 2%;
+  
+}
+.form-group{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size:90%;
+}
+.form-control{
+  border-radius: 4px;
+  width: 100%;
+  height:25px;
+  border-color: #c9bba8;
+}
+
+.submit{
+  float:right;
+  background-color:#e6e2d3;
+  border-color:#c9bba8;
+  padding:15px 15px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+/*profilKnjige */
+#coverKnjige{
+  margin-top:3%;
+  margin-left:3%;
+  float:left;
+}
+.velikostCoverja{
+  height: 370px;
+  width: 300px;
+}
+#DisplayPodatkov{
+  width: 50%;
+  float:left;
+  margin-top: 0.5%;
+  margin-left: 1.5%;
+}
+#displayNaslov{
+  font-size:200%;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: bold;
+}
+#opis{
+  font-family: 'ProximaNova', sans-serif;
+  font-weight:bold;
+}
+#displayAvtorja{
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: bold;
+  font-size: 105%;
+}
+#dodajNaPolico{
+  margin-top:3%;
+margin-left: 4%;
+}
+#naPolico{
+  margin-top:3%;
+  background-color:#e6e2d3;
+  border:none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*myProfile*/
+#mojProfil{
+  width: 40%;
+  margin-left: 27%;
+  margin-top: 5%;
+  padding:30px;
+  text-align: center;
+  background-color:#F9F7F5;
+  border:solid;
+  border-radius: 12px;
+  font-size: 110%;
+  margin-bottom: 5%;
+}
+.izpisPodatkov{
+  font-weight: bold;
+}
+#logOutButton{
+  background-color:#e6e2d3;
+  border:none;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: bold;
+}
+#logOutButton:hover{
+  color:black;
+  text-decoration: underline;
+}

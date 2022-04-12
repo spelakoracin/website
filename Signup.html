@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>SignUp</title>
+</head>
+<body id="signupbody">
+    <form id="SignUp" action="signUp.php" method="post">
+            <p id="text">Registracija</p>
+            <div class="form-group">
+                <label for="Ime">Ime</label>
+                <input type="text" class="form-control" id="Ime" name="ime">
+            </div>
+            <div class="form-group">
+              <label for="Priimek ">Priimek</label>
+              <input type="text" class="form-control" id="Priimek" name="priimek">
+          </div>
+          <div class="form-group">
+            <label for="Uporabnisko_ime">Uporabniško ime</label>
+            <input type="text" class="form-control" id="Uporabnisko_ime" name="uporabnisko_ime">
+        </div>
+          <div class="form-group">
+            <label for="email ">Email naslov</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Geslo</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Geslo" name="geslo">
+            <input type="checkbox" onclick="showPassword()">Prikaži geslo
+        </div>
+        <div class="form-group">
+            <label for="Birthdate">Datum rojstva</label>
+            <input type="date" class="form-control" id="Birthdate" value="2009-12-31" min="1940-01-01" max="2009-12-31" name="datum_rojstva">
+        </div>
+        <div class="form-group">
+            <p>Spol</p>
+            <label class="radio-inline">
+                <input type="radio" id="moški" value="moški" name="spol"> moški
+              </label>
+              <label class="radio-inline">
+                <input type="radio" id="ženski" value="ženski" name="spol"> ženski
+              </label>
+              <label class="radio-inline">
+                <input type="radio" id="drugo" value="drugo" name="spol"> drugo
+              </label>
+        </div>
+        <button type="Signup" class="Signupbtn" name="signup">Ustvari nov račun</button>
+    </form>
+</body>
+</html>

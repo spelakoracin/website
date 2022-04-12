@@ -1,0 +1,27 @@
+<div class="form-group">
+            <label for="Genre">Žanr</label>
+            <select id="Genre" name="zanr">
+                <option value="Crime">Kriminalke</option>
+                <option value="Fantasy">Fantazijske</option>
+                <option value="Romance">Ljubezenske</option>
+                <option value="Sci-fi">Znanstvena fantastika</option>
+                <option value="Adventure">Pustolovske</option>
+                <option value="YoungAdults">Za mlade</option>
+                <option value="Poems">Poezija</option>
+                <option value="Bussines">Podjetništvo</option>
+                <option value="Science">Psihologija</option>
+                <option value="Philosophy">Filozofija</option>
+                <option value="Biography">Biografija</option>
+                <option value="History">Zgodovina</option>
+                <option value="Religion">Religija</option>
+                <option value="Spirituality">Spiritualnost</option>
+                <option value="CookBooks">Kuharske knjige</option>
+                <option value="Travel">Popotništvo</option>
+                <option value="Self-help">Samopomoč</option>
+                <option value="Sport">Šport</option>
+                <option value="Other">Drugo</option>
+            </select>
+        </div>  
+
+        <label for="genre">Žanr</label>
+          <input type="text" class="form-control" id="genre" name="zanr">

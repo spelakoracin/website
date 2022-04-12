@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <a href="#default" class="logo">CompanyLogo</a>
+        <div class="header-left">
+          <a class="MyBooks" href="knjiznaPolica.php?id=1">Moje knjige</a>
+          <a class="dropdown">
+          <button  id="gumbPrebrskaj" class="dropbtn" onclick="redirect()">Prebrskaj</button>
+            <div class="dropdown-content">
+              <div class="column">
+              <ul>
+                <li href="#"><b>STVARNA LITERATURA</b></li>
+                <li onclick="redirect()" name="filtriraj">Podjetništvo</li>
+                <li href="#">Znanost</li>
+                <li href="#">Psihologija</li>
+                <li href="#">Filozofija</li>
+                <li href="#">Biografija</li>
+              </ul>
+              </div>
+              <div class="column">
+                <ul>
+                  <li href="#"><b>LEPOSLOVJE</b></li>
+                  <li href="#">Kriminalke</li>
+                  <li href="#">Fantazijske</li>
+                  <li href="#">Ljubezenske</li>
+                  <li href="#">Znanstvena fantastika</li>
+                  <li href="#">Grozljivke</li>
+                  <li href="#">Drugo</li>
+                </ul>
+              </div>
+            </div>
+        </a>
+          <a class="search" href="#Search"><input class =searchbar type="text" placeholder= "Išči knjige"></a>
+        </div>
+        <div class="header-right">        
+          <a class="LogOut" href="myProfile.php"><img src="pfp.png" id=pfp alt=LogOut> </a>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.header {
+    overflow: hidden;
+    background-color:#e6e2d3;;
+    padding: 10px 10px;
+    font-family: 'ProximaNova', sans-serif;
+    border-bottom:solid;
+    border-bottom-color:#c9bba8;
+    height: 70px;
+    position: static;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 130%; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  
+  .header a.MyBooks {
+    float:left;
+  }
+  .header-left{
+      margin-left:40%;
+  }
+  .header-right {
+    float: right;
+  }
+  .header-left a.MyBooks{
+      padding-right:20px;
+      
+  }
+.header-left .MyBooks:hover {background-color: white;}
+
+  .dropbtn {
+    background-color: #e6e2d3;
+    color: black;
+    padding-right: 40px;
+    padding-left:20px;
+    font-size: 16px;
+    border: none;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 105%;
+    border-radius: 4px;
+  }
+
+  .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    font-family: 'ProximaNova', sans-serif;
+    font-size:70%;
+    border-radius: 4px;
+
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: white;}
+  .dropdown-content li:hover {background-color: white;}
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .dropdown-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+
+#pfp{
+    width:50px;
+    height: 50px;
+    margin-left: 0%;
+}
+img#search{
+    width: 19.2px;
+    height:19.2px;
+    margin-right:0%;
+}
+.header-left input[type=text]{
+    width: 152%;
+    border-color: #c9bba8;
+    height: 24px;
+}
+.header-left  input.searchbar{
+    padding-left: 25px;
+    background: url("search.png") no-repeat left;
+    background-color: white;
+    background-size: 23px;
+}
+.header-left a.searchbutton{
+    right:0;
+}
